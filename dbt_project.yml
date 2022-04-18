@@ -1,0 +1,243 @@
+name: 'hubspot_source'
+version: '0.5.3'
+config-version: 2
+require-dbt-version: [">=1.0.0", "<2.0.0"]
+
+models:
+  hubspot_source:
+    +materialized: table
+    +schema: stg_hubspot
+    tmp:
+      +materialized: view
+      stg_hubspot__company_property_history_tmp:
+        +alias: 'r_hubspot_company_property_history_tmp'
+      stg_hubspot__company_tmp:
+        +alias: 'r_hubspot_company_tmp'
+      stg_hubspot__contact_list_member_tmp:
+        +alias: 'r_hubspot_contact_list_member_tmp'
+      stg_hubspot__contact_merge_audit_tmp:
+        +alias: 'r_hubspot_contact_merge_audit_tmp'
+      stg_hubspot__contact_property_history_tmp:
+        +alias: 'r_hubspot_contact_property_history_tmp'
+      stg_hubspot__contact_tmp:
+        +alias: 'r_hubspot_contact_tmp'
+      stg_hubspot__deal_company_tmp:
+        +alias: 'r_hubspot_deal_company_tmp'
+      stg_hubspot__deal_pipeline_tmp:
+        +alias: 'r_hubspot_deal_pipeline_tmp'
+      stg_hubspot__deal_pipeline_stage_tmp:
+        +alias: 'r_hubspot_deal_pipeline_stage_tmp'
+      stg_hubspot__deal_tmp:
+        +alias: 'r_hubspot_deal_tmp'
+      stg_hubspot__email_campaign_tmp:
+        +alias: 'r_hubspot_email_campaign_tmp'
+      stg_hubspot__email_event_bounce_tmp:
+        +alias: 'r_hubspot_email_event_bounce_tmp'
+      stg_hubspot__email_event_click_tmp:
+        +alias: 'r_hubspot_email_event_click_tmp'
+      stg_hubspot__email_event_deferred_tmp:
+        +alias: 'r_hubspot_email_event_deferred_tmp'
+      stg_hubspot__email_event_delivered_tmp:
+        +alias: 'r_hubspot_email_event_delivered_tmp'
+      stg_hubspot__email_event_dropped_tmp:
+        +alias: 'r_hubspot_email_event_dropped_tmp'
+      stg_hubspot__email_event_forward_tmp:
+        +alias: 'r_hubspot_email_event_forward_tmp'
+      stg_hubspot__email_event_open_tmp:
+        +alias: 'r_hubspot_email_event_open_tmp'
+      stg_hubspot__email_event_print_tmp:
+        +alias: 'r_hubspot_email_event_print_tmp'
+      stg_hubspot__email_event_sent_tmp:
+        +alias: 'r_hubspot_email_event_sent_tmp'
+      stg_hubspot__email_event_spam_report_tmp:
+        +alias: 'r_hubspot_email_event_spam_report_tmp'
+      stg_hubspot__email_event_status_change_tmp:
+        +alias: 'r_hubspot_email_event_status_change_tmp'
+      stg_hubspot__email_event_tmp:
+        +alias: 'r_hubspot_email_event_tmp'
+      stg_hubspot__engagement_call_tmp:
+       +alias: 'r_hubspot_engagment_call_tmp'
+      stg_hubspot__engagment_company_tmp:
+        +alias: 'r_hubspot_engagment_company_tmp'
+      stg_hubspot__engagement_contact_tmp:
+        +alias: 'r_hubspot_engagement_contact_tmp'
+      stg_hubspot__engagement_deal_tmp:
+        +alias: 'r_hubspot_engagement_deal_tmp'
+      stg_hubspot__engagement_email_tmp:
+        +alias: 'r_hubspot_engagement_email_tmp'
+      stg_hubspot__engagement_meeting_tmp:
+        +alias: 'r_hubspot_engagement_meeting_tmp'
+      stg_hubspot__engagement_note_tmp:
+        +alias: 'r_hubspot_engagement_note_tmp'
+      stg_hubspot__engagement_task_tmp:
+        +alias: 'r_hubspot_engagement_task_tmp'
+      stg_hubspot__engagement_tmp:
+        +alias: 'r_hubspot_engagement_tmp'
+      stg_hubspot__owner_tmp:
+        +alias: 'r_hubspot_owner_tmp'
+      stg_hubspot__ticket_company_tmp:
+        +alias: 'r_hubspot_ticket_company_tmp'
+      stg_hubspot__ticket_contact_tmp:
+        +alias: 'r_hubspot_ticket_contact_tmp'
+      stg_hubspot__ticket_deal_tmp:
+        +alias: 'r_hubspot_ticket_deal_tmp'
+      stg_hubspot__ticket_engagement_tmp:
+        +alias: 'r_hubspot_ticket_engagement_tmp'
+      stg_hubspot__ticket_pipeline_stage_tmp:
+        +alias: 'r_hubspot_ticket_pipeline_stage_tmp'
+      stg_hubspot__ticket_pipeline_tmp:
+        +alias: 'r_hubspot_ticket_pipeline_tmp'
+      stg_hubspot__ticket_property_history_tmp:
+        +alias: 'r_hubspot_ticket_property_history_tmp'
+      stg_hubspot__ticket_tmp:
+        +alias: 'r_hubspot_ticket_tmp'
+    stg_hubspot__company_property_history:
+      +alias: 'r_hubspot_company_property_history'
+    stg_hubspot__company:
+      +alias: 'r_hubspot_company'
+    stg_hubspot__contact_list:
+      +alias: 'r_hubspot_contact_list'
+    stg_hubspot__contact_list_member:
+      +alias: 'r_hubspot_contact_list_member'
+    stg_hubspot__contact_merge_audit:
+      +alias: 'r_hubspot_contact_merge_audit'
+    stg_hubspot__contact_property_history:
+      +alias: 'r_hubspot_contact_property_history'
+    stg_hubspot__contact:
+      +alias: 'r_hubspot_contact'
+    stg_hubspot__deal_company:
+      +alias: 'r_hubspot_deal_company'
+    stg_hubspot__deal_pipeline:
+      +alias: 'r_hubspot_deal_pipeline'
+    stg_hubspot__deal_pipeline_stage:
+      +alias: 'r_hubspot_deal_pipeline_stage'
+    stg_hubspot__deal:
+      +alias: 'r_hubspot_deal'
+    stg_hubspot__email_campaign:
+      +alias: 'r_hubspot_email_campaign'
+    stg_hubspot__email_event_bounce:
+      +alias: 'r_hubspot_email_event_bounce'
+    stg_hubspot__email_event_click:
+      +alias: 'r_hubspot_email_event_click'
+    stg_hubspot__email_event_deferred:
+      +alias: 'r_hubspot_email_event_deferred'
+    stg_hubspot__email_event_delivered:
+      +alias: 'r_hubspot_email_event_delivered'
+    stg_hubspot__email_event_dropped:
+      +alias: 'r_hubspot_email_event_dropped'
+    stg_hubspot__email_event_forward:
+      +alias: 'r_hubspot_email_event_forward'
+    stg_hubspot__email_event_open:
+      +alias: 'r_hubspot_email_event_open'
+    stg_hubspot__email_event_print:
+      +alias: 'r_hubspot_email_event_print'
+    stg_hubspot__email_event_sent:
+      +alias: 'r_hubspot_email_event_sent'
+    stg_hubspot__email_event_spam_report:
+      +alias: 'r_hubspot_email_event_spam_report'
+    stg_hubspot__email_event_status_change:
+      +alias: 'r_hubspot_email_event_status_change'
+    stg_hubspot__email_event:
+      +alias: 'r_hubspot_email_event'
+    stg_hubspot__engagement_call:
+      +alias: 'r_hubspot_engagment_call'
+    stg_hubspot__engagment_company:
+      +alias: 'r_hubspot_engagment_company'
+    stg_hubspot__engagement_contact:
+      +alias: 'r_hubspot_engagement_contact'
+    stg_hubspot__engagement_deal:
+      +alias: 'r_hubspot_engagement_deal'
+    stg_hubspot__engagement_email:
+      +alias: 'r_hubspot_engagement_email'
+    stg_hubspot__engagement_meeting:
+      +alias: 'r_hubspot_engagement_meeting'
+    stg_hubspot__engagement_note:
+      +alias: 'r_hubspot_engagement_note'
+    stg_hubspot__engagement_task:
+      +alias: 'r_hubspot_engagement_task'
+    stg_hubspot__engagement:
+      +alias: 'r_hubspot_engagement'
+    stg_hubspot__owner:
+      +alias: 'r_hubspot_owner'
+    stg_hubspot__ticket_company:
+      +alias: 'r_hubspot_ticket_company'
+    stg_hubspot__ticket_contact:
+      +alias: 'r_hubspot_ticket_contact'
+    stg_hubspot__ticket_deal:
+      +alias: 'r_hubspot_ticket_deal'
+    stg_hubspot__ticket_engagement:
+      +alias: 'r_hubspot_ticket_engagement'
+    stg_hubspot__ticket_pipeline_stage:
+      +alias: 'r_hubspot_ticket_pipeline_stage'
+    stg_hubspot__ticket_pipeline:
+      +alias: 'r_hubspot_ticket_pipeline'
+    stg_hubspot__ticket_property_history:
+      +alias: 'r_hubspot_ticket_property_history'
+    stg_hubspot__ticket:
+      +alias: 'r_hubspot_ticket'
+
+vars:
+  hubspot_source:
+    hubspot_database: PC_FIVETRAN_DB
+    hubspot_schema: HUBSPOT
+    company: "{{ source('hubspot','company') }}"
+    company_property_history: "{{ source('hubspot','company_property_history') }}"
+    contact: "{{ source('hubspot','contact') }}"
+    contact_merge_audit: "{{ source('hubspot','contact_merge_audit') }}"
+    contact_list: "{{ source('hubspot','contact_list') }}"
+    contact_list_member: "{{ source('hubspot','contact_list_member') }}"
+    contact_property_history: "{{ source('hubspot','contact_property_history') }}"
+    deal: "{{ source('hubspot','deal') }}"
+    deal_stage: "{{ source('hubspot','deal_stage') }}"
+    deal_company: "{{ source('hubspot','deal_company') }}"
+    deal_pipeline: "{{ source('hubspot','deal_pipeline') }}"
+    deal_pipeline_stage: "{{ source('hubspot','deal_pipeline_stage') }}"
+    deal_property_history: "{{ source('hubspot','deal_property_history') }}"
+    email_campaign: "{{ source('hubspot','email_campaign') }}"
+    email_event: "{{ source('hubspot','email_event') }}"
+    email_event_bounce: "{{ source('hubspot','email_event_bounce') }}"
+    email_event_click: "{{ source('hubspot','email_event_click') }}"
+    email_event_deferred: "{{ source('hubspot','email_event_deferred') }}"
+    email_event_delivered: "{{ source('hubspot','email_event_delivered') }}"
+    email_event_dropped: "{{ source('hubspot','email_event_dropped') }}"
+    email_event_forward: "{{ source('hubspot','email_event_forward') }}"
+    email_event_open: "{{ source('hubspot','email_event_open') }}"
+    email_event_print: "{{ source('hubspot','email_event_print') }}"
+    email_event_sent: "{{ source('hubspot','email_event_sent') }}"
+    email_event_spam_report: "{{ source('hubspot','email_event_spam_report') }}"
+    email_event_status_change: "{{ source('hubspot','email_event_status_change') }}"
+    engagement: "{{ source('hubspot','engagement') }}"
+    engagement_call: "{{ source('hubspot','engagement_call') }}"
+    engagement_company: "{{ source('hubspot','engagement_company') }}"
+    engagement_contact: "{{ source('hubspot','engagement_contact') }}"
+    engagement_deal: "{{ source('hubspot','engagement_deal') }}"
+    engagement_email: "{{ source('hubspot','engagement_email') }}"
+    engagement_meeting: "{{ source('hubspot','engagement_meeting') }}"
+    engagement_note: "{{ source('hubspot','engagement_note') }}"
+    engagement_task: "{{ source('hubspot','engagement_task') }}"
+    owner: "{{ source('hubspot','owner') }}"
+
+    #Service Hub Models
+    ticket_company: "{{ source('hubspot','ticket_company') }}"
+    ticket_contact: "{{ source('hubspot','ticket_contact') }}"
+    ticket_deal: "{{ source('hubspot','ticket_deal') }}"
+    ticket_engagement: "{{ source('hubspot','ticket_engagement') }}"
+    ticket_pipeline: "{{ source('hubspot','ticket_pipeline') }}"
+    ticket_pipeline_stage: "{{ source('hubspot','ticket_pipeline_stage') }}"
+    ticket_property_history: "{{ source('hubspot','ticket_property_history') }}"
+    ticket: "{{ source('hubspot','ticket') }}"
+
+    #Service Hub Enable Variables
+    hubspot_service_enabled: false
+
+    #Contact Merge Audit Enable Variable
+    hubspot_contact_merge_audit_enabled: false
+
+    #HubSpot Passthrough Columns
+    hubspot__deal_pass_through_columns: []
+    hubspot__contact_pass_through_columns: []
+    hubspot__company_pass_through_columns: []
+    hubspot__ticket_pass_through_columns: []
+
+    #OVERRIDE any ^ passthrough columns by just passing all columns
+    hubspot__pass_through_all_columns: false
