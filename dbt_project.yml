@@ -113,6 +113,10 @@ models:
       +alias: 'r_hubspot_deal_pipeline_stage'
     stg_hubspot__deal:
       +alias: 'r_hubspot_deal'
+    stg_hubspot__deal_property_history:
+      +alias: 'r_hubspot_deal_property_history'
+    stg_hubspot__deal_stage:
+      +alias: 'r_hubspot_deal_stage'
     stg_hubspot__email_campaign:
       +alias: 'r_hubspot_email_campaign'
     stg_hubspot__email_event_bounce:
@@ -141,7 +145,7 @@ models:
       +alias: 'r_hubspot_email_event'
     stg_hubspot__engagement_call:
       +alias: 'r_hubspot_engagment_call'
-    stg_hubspot__engagment_company:
+    stg_hubspot__engagement_company:
       +alias: 'r_hubspot_engagment_company'
     stg_hubspot__engagement_contact:
       +alias: 'r_hubspot_engagement_contact'
