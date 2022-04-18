@@ -182,6 +182,12 @@ models:
 
 vars:
   hubspot_source:
+    
+    hubspot_email_event_forward_enabled: false
+    hubspot_email_event_print_enabled: false
+    hubspot_sales_enabled: false  
+    hubspot_engagement_enabled: false
+    
     hubspot_database: PC_FIVETRAN_DB
     hubspot_schema: HUBSPOT
     company: "{{ source('hubspot','company') }}"
