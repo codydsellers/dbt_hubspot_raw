@@ -227,6 +227,7 @@ vars:
     engagement_task: "{{ source('hubspot','engagement_task') }}"
     owner: "{{ source('hubspot','owner') }}"
 
+
     #Service Hub Models
     ticket_company: "{{ source('hubspot','ticket_company') }}"
     ticket_contact: "{{ source('hubspot','ticket_contact') }}"
