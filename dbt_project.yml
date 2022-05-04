@@ -247,12 +247,16 @@ vars:
     #HubSpot Passthrough Columns
     hubspot__deal_pass_through_columns: []
     hubspot__contact_pass_through_columns: [
-      {name: "PROPERTY_LEADSOURCE", alias: "Contact_Lead_Source"},
       {name: "PROPERTY_PHONE", alias: "Contact_Phone_Number"},
       {name: "PROPERTY_OWNERNAME", alias: "Contact_Owner"},
       {name: "PROPERTY_CREATEDATE", alias: "Contact_Created_Date"},
-      {name: "PROPERTY_HS_MARKETABLE_STATUS", alias: "Contact_Marketing_Status"},
-      {name: "PROPERTY_HS_ANALYTICS_LAST_TIMESTAMP", alias: "Contact_Last_Activity_Date"}]
+      {name: "PROPERTY_HS_MARKETABLE_STATUS", alias: "Contact_Marketable_Status"},
+      {name: "PROPERTY_HS_EMAIL_OPTOUT", alias: "Contact_Opt_Out_Status"},
+      {name: "PROPERTY_HS_ANALYTICS_SOURCE", alias: "Contact_Lead_Source_First_Touch"},
+      {name: "PROPERTY_HS_LATEST_SOURCE", alias: "Contact_Lead_Source_Last_Touch"},
+      {name: "PROPERTY_MQL_DATE", alias: "Contact_MQL_Date"},
+      {name: "PROPERTY_COUNTRY", alias: "Contact_Country"},
+      ]
     hubspot__company_pass_through_columns: []
     hubspot__ticket_pass_through_columns: []
 
