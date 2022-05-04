@@ -255,7 +255,11 @@ vars:
       {name: "PROPERTY_LEADSOURCE", alias: "Contact_Lead_Source"},
       {name: "PROPERTY_LEAD_SOURCE_DETAIL_C", alias: "Contact_Lead_Source_Detail"},
       {name: "PROPERTY_MQL_DATE", alias: "Contact_MQL_Date"},
-      {name: "PROPERTY_COUNTRY", alias: "Contact_Country"}
+      {name: "PROPERTY_SQL_DATE", alias: "Contact_SQL_Date"},
+      {name: "PROPERTY_SCL_DATE", alias: "Contact_SCL_Date"},
+      {name: "PROPERTY_PROSPECT_DATE", alias: "Contact_Prospect_Date"},
+      {name: "PROPERTY_OPPORTUNITY_DATE", alias: "Contact_Opportunity_Date"},
+      {name: "PROPERTY_CLOSEDATE", alias: "Contact_Closed_Date"}
       ]
     hubspot__company_pass_through_columns: []
     hubspot__ticket_pass_through_columns: []
