@@ -252,10 +252,10 @@ vars:
       {name: "PROPERTY_CREATEDATE", alias: "Contact_Created_Date"},
       {name: "PROPERTY_HS_MARKETABLE_STATUS", alias: "Contact_Marketable_Status"},
       {name: "PROPERTY_HS_EMAIL_OPTOUT", alias: "Contact_Opt_Out_Status"},
-      {name: "PROPERTY_HS_ANALYTICS_SOURCE", alias: "Contact_Lead_Source_First_Touch"},
-      {name: "PROPERTY_HS_LATEST_SOURCE", alias: "Contact_Lead_Source_Last_Touch"},
+      {name: "PROPERTY_leadsource", alias: "Contact_Lead_Source"},
+      {name: "PROPERTY_LEAD_SOURCE_DETAIL_C", alias: "Contact_Lead_Source_Detail"},
       {name: "PROPERTY_MQL_DATE", alias: "Contact_MQL_Date"},
-      {name: "PROPERTY_COUNTRY", alias: "Contact_Country"},
+      {name: "PROPERTY_COUNTRY", alias: "Contact_Country"}
       ]
     hubspot__company_pass_through_columns: []
     hubspot__ticket_pass_through_columns: []
