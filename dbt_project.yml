@@ -260,6 +260,7 @@ vars:
       {name: "PROPERTY_PROSPECT_DATE", alias: "Contact_Prospect_Date"},
       {name: "PROPERTY_OPPORTUNITY_DATE", alias: "Contact_Opportunity_Date"},
       {name: "PROPERTY_CLOSEDATE", alias: "Contact_Closed_Date"}
+      {name: "PROPERTY_LIFECYCLESTAGE", alias: "Contact_Lifecycle_Stage"}
       ]
     hubspot__company_pass_through_columns: []
     hubspot__ticket_pass_through_columns: []
