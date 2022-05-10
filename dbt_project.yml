@@ -284,7 +284,9 @@ vars:
       {name: "PROPERTY_SALESFORCECAMPAIGNIDS", alias: "Contact_Salesforce_Campaign_IDs"},
       {name: "PROPERTY_LEADSTATUS", alias: "Contact_Lead_Status"},
       {name: "PROPERTY_SUB_STATUS", alias: "Contact_Sub_Status"},
-      {name: "PROPERTY_LIFECYCLESTAGE", alias: "Contact_Lifecycle_Stage"}
+      {name: "PROPERTY_LIFECYCLESTAGE", alias: "Contact_Lifecycle_Stage"},
+      {name: "PROPERTY_SALESFORCEACCOUNTID", alias: "Contact_Salesforce_Account_ID"},
+      {name: "PROPERTY_SALESFORCECONTACTID", alias: "Contact_Salesforce_Contact_ID"}
       ]
     hubspot__company_pass_through_columns: []
     hubspot__ticket_pass_through_columns: []
