@@ -274,7 +274,7 @@ vars:
       {name: "PROPERTY_HS_EMAIL_HARD_BOUNCE_REASON_ENUM", alias: "Property_HS_Email_Hard_Bounce_Reason"},
       {name: "PROPERTY_HS_ANALYTICS_FIRST_URL", alias: "Contact_First_Url"},
       {name: "PROPERTY_MK_CUSTOMER_FIT_SCORE", alias: "Contact_MK_Customer_Fit_Score"},
-      {name: "PROPERTY_MK_CUSTOMER_FIT_SEGMENT", alias: "Contact_Customer_Fit_Segment"},
+      {name: "PROPERTY_MK_CUSTOMER_FIT_SEGMENT", alias: "Contact_MK_Customer_Fit_Segment"},
       {name: "PROPERTY_MK_CUSTOMER_FIT_SIGNALS", alias: "Contact_MK_Customer_Fit_Signal"},
       {name: "PROPERTY_MK_LEAD_GRADE_SCORE", alias: "Contact_MK_Lead_Grade_Score"},
       {name: "PROPERTY_MK_LEAD_GRADE_SEGMENT", alias: "Contact_MK_Lead_Grade_Segment"},
