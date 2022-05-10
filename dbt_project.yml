@@ -271,7 +271,7 @@ vars:
       {name: "PROPERTY_PLATFORM_ACCOUNT_TYPE", alias: "Contact_Platform_Account_Type"},
       {name: "PROPERTY_PLATFORM_ACCOUNT", alias: "Contact_Platform_Account"},
       {name: "PROPERTY_PLATFORM_ACCOUNT_CREATION_METHOD", alias: "Contact_Platform_Account_Creation_Method"},
-      {name: "PROPERTY_HS_EMAIL_HARD_BOUNCE_REASON_ENUM", alias: "Property_HS_Email_Hard_Bounce_Reason"},
+      {name: "PROPERTY_HS_EMAIL_HARD_BOUNCE_REASON_ENUM", alias: "Contact_HS_Email_Hard_Bounce_Reason"},
       {name: "PROPERTY_HS_ANALYTICS_FIRST_URL", alias: "Contact_First_Url"},
       {name: "PROPERTY_MK_CUSTOMER_FIT_SCORE", alias: "Contact_MK_Customer_Fit_Score"},
       {name: "PROPERTY_MK_CUSTOMER_FIT_SEGMENT", alias: "Contact_MK_Customer_Fit_Segment"},
