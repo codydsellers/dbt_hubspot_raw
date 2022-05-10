@@ -263,7 +263,6 @@ vars:
       {name: "PROPERTY_UTM_MEDIUM", alias: "Contact_UTM_Medium"},
       {name: "PROPERTY_UTM_SOURCE", alias: "Contact_UTM_Source"},
       {name: "PROPERTY_UTM_TERM", alias: "Contact_UTM_Term"},
-      {name: "PROPERTY_ANNUALREVENUE", alias: "Contact_Annual_Revenue"},
       {name: "PROPERTY_INDUSTRY", alias: "Contact_Industry"},
       {name: "PROPERTY_LEAD_OBJECTIVE", alias: "Contact_Lead_Objective"},
       {name: "PROPERTY_LEAD_TYPE", alias: "Contact_Lead_Type"},
