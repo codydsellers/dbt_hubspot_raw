@@ -288,7 +288,7 @@ vars:
       {name: "PROPERTY_SALESFORCEACCOUNTID", alias: "Contact_Salesforce_Account_ID"},
       {name: "PROPERTY_SALESFORCECONTACTID", alias: "Contact_Salesforce_Contact_ID"},
       {name: "PROPERTY_SALESFORCELEADID", alias: "Contact_Salesforce_Lead_ID"},
-      {name: "PROPERTY_SALESFORCELEADID", alias: "Contact_Country"}
+      {name: "PROPERTY_COUNTRY", alias: "Contact_Country"}
       ]
     hubspot__company_pass_through_columns: []
     hubspot__ticket_pass_through_columns: []
