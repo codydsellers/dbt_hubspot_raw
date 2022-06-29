@@ -287,7 +287,7 @@ vars:
       {name: "PROPERTY_LIFECYCLESTAGE", alias: "Contact_Lifecycle_Stage"},
       {name: "PROPERTY_SALESFORCEACCOUNTID", alias: "Contact_Salesforce_Account_ID"},
       {name: "PROPERTY_SALESFORCECONTACTID", alias: "Contact_Salesforce_Contact_ID"},
-      {name: "PROPERTY_SALESFORCELEADID", alias: "Contact_Salesforce_Lead_ID"}
+      {name: "PROPERTY_SALESFORCELEADID", alias: "Contact_Salesforce_Lead_ID"},
       {name: "PROPERTY_SALESFORCELEADID", alias: "Contact_Country"}
       ]
     hubspot__company_pass_through_columns: []
